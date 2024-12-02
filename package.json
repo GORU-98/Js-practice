@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "nodemon": "^3.1.7",
+    "npm": "^10.9.0",
+    "npx": "^10.2.2"
+  },
+  "name": "js",
+  "version": "1.0.0",
+  "main": "array.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

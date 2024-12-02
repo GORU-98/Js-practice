@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .div{
+            background-color: aqua;
+            width: 10rem;
+            height: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="div" id="gourav">
+        <button class="btn">Button</button>
+    </div>
+
+    <script>
+        const div = document.getElementsByClassName("div")[0];
+        const btn = document.getElementsByClassName("btn")[0];
+        // console.log(div.hasAttribute("id"))
+// console.log(div);
+        div.addEventListener("click",()=>{
+            console.log("div");
+        })
+        btn.addEventListener("click",(e)=>{
+            e.stopPropagation()
+            console.log("button0");
+        })
+        btn.addEventListener("click",(e)=>{
+            e.stopImmediatePropagation()
+            console.log("button1");
+        })
+        btn.addEventListener("click",(e)=>{
+            // e.stopPropagation()
+            console.log("button2");
+        })
+    </script>
+</body>
+</html>
